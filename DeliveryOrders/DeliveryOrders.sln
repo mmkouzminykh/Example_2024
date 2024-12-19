@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.Core", "DeliveryOrders.Core\DeliveryOrders.Core.csproj", "{E585454D-430D-41AF-A322-47492CEDA16B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryOrders.Core", "DeliveryOrders.Core\DeliveryOrders.Core.csproj", "{E585454D-430D-41AF-A322-47492CEDA16B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.Api", "DeliveryOrders.Api\DeliveryOrders.Api.csproj", "{2A1B03B0-6919-467B-9FB3-4DCCB99A3CF3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.Infrastructure", "DeliveryOrders.Infrastructure\DeliveryOrders.Infrastructure.csproj", "{B755D1EC-948D-4D02-AB3C-53C37F5EB5BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryOrders.Infrastructure", "DeliveryOrders.Infrastructure\DeliveryOrders.Infrastructure.csproj", "{B755D1EC-948D-4D02-AB3C-53C37F5EB5BC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{745790BA-67A6-455C-95A5-61E3CB2FEA04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.UnitTests", "DeliveryOrders.UnitTests\DeliveryOrders.UnitTests.csproj", "{5C4A8F9F-6080-41DB-B152-82C7EC88861B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryOrders.UnitTests", "DeliveryOrders.UnitTests\DeliveryOrders.UnitTests.csproj", "{5C4A8F9F-6080-41DB-B152-82C7EC88861B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.IntegrationTests", "DeliveryOrders.IntegrationTests\DeliveryOrders.IntegrationTests.csproj", "{C946E775-C963-47D4-BE5E-50FB32EBADED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryOrders.IntegrationTests", "DeliveryOrders.IntegrationTests\DeliveryOrders.IntegrationTests.csproj", "{C946E775-C963-47D4-BE5E-50FB32EBADED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryOrders.Api", "DeliveryOrders.Api\DeliveryOrders.Api.csproj", "{4AB472FE-F793-4DCA-9D1E-019AADC38D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		{E585454D-430D-41AF-A322-47492CEDA16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E585454D-430D-41AF-A322-47492CEDA16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E585454D-430D-41AF-A322-47492CEDA16B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A1B03B0-6919-467B-9FB3-4DCCB99A3CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A1B03B0-6919-467B-9FB3-4DCCB99A3CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A1B03B0-6919-467B-9FB3-4DCCB99A3CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A1B03B0-6919-467B-9FB3-4DCCB99A3CF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B755D1EC-948D-4D02-AB3C-53C37F5EB5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B755D1EC-948D-4D02-AB3C-53C37F5EB5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B755D1EC-948D-4D02-AB3C-53C37F5EB5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,6 +37,10 @@ Global
 		{C946E775-C963-47D4-BE5E-50FB32EBADED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C946E775-C963-47D4-BE5E-50FB32EBADED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C946E775-C963-47D4-BE5E-50FB32EBADED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB472FE-F793-4DCA-9D1E-019AADC38D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB472FE-F793-4DCA-9D1E-019AADC38D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB472FE-F793-4DCA-9D1E-019AADC38D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB472FE-F793-4DCA-9D1E-019AADC38D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

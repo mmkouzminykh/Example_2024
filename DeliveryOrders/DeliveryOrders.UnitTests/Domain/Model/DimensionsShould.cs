@@ -1,4 +1,4 @@
-﻿using DeliveryOrders.Core.Domain.Model;
+﻿using DeliveryOrders.Core.Domain.Model.ShipmentAggregate;
 using FluentAssertions;
 using System;
 using System.Collections.Generic;

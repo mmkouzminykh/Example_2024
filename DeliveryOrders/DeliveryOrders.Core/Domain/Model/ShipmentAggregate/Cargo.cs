@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeliveryOrders.Core.Domain.Model
+namespace DeliveryOrders.Core.Domain.Model.ShipmentAggregate
 {
-    public sealed class Cargo: Entity<long>
+    public sealed class Cargo : Entity<long>
     {
         public static Result<Cargo> Create(long id, Dimensions dimensions, string packageType, string cargoType, string? comment)
         {
@@ -25,7 +25,7 @@ namespace DeliveryOrders.Core.Domain.Model
 
         private Cargo() { }
 
-        private Cargo(long id, Dimensions dimensions, string packageType, string cargoType, string? comment): base (id)
+        private Cargo(long id, Dimensions dimensions, string packageType, string cargoType, string? comment) : base(id)
         {
             Dimensions = dimensions;
             PackageType = packageType;

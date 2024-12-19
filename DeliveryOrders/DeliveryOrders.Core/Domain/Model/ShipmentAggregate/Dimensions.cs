@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 
-namespace DeliveryOrders.Core.Domain.Model
+namespace DeliveryOrders.Core.Domain.Model.ShipmentAggregate
 {
     public sealed class Dimensions : ValueObject
     {
@@ -15,12 +15,12 @@ namespace DeliveryOrders.Core.Domain.Model
             if (weight <= 0 || weight > 100)
                 return Result.Failure<Dimensions>("Недопустимый значение веса");
 
-            return new Dimensions(length, width, height, weight);   
+            return new Dimensions(length, width, height, weight);
         }
 
         private Dimensions() { }
 
-        private Dimensions(decimal length, decimal width,  decimal height, decimal weight)
+        private Dimensions(decimal length, decimal width, decimal height, decimal weight)
         {
             Length = length;
             Width = width;
