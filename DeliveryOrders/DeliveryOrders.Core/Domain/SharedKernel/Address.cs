@@ -25,7 +25,7 @@ namespace DeliveryOrders.Core.Domain.SharedKernel
         public string Street { get; private set; }
         public string House { get; private set; }
 
-        public Result<Address, Error> Create(string region, string city, string street, string house)
+        public static Result<Address, Error> Create(string region, string city, string street, string house)
         {
             if (string.IsNullOrWhiteSpace(region)) return GeneralErrors.ValueIsRequired(nameof(region));
             if (string.IsNullOrWhiteSpace(city)) return GeneralErrors.ValueIsRequired(nameof(city));

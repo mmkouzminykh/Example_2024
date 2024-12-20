@@ -35,6 +35,7 @@ namespace DeliveryOrders.Infrastructure.Adapters.Postgres.EntityConfiguration
                     a.Property(p => p.City).HasColumnName("city").IsRequired();
                     a.Property(p => p.Street).HasColumnName("street").IsRequired();
                     a.Property(p => p.House).HasColumnName("house").IsRequired();
+                    a.WithOwner();
                 });
         }
     }

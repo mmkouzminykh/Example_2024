@@ -49,9 +49,10 @@ namespace DeliveryOrders.Infrastructure.Adapters.Postgres.EntityConfiguration
                 });
 
             builder
-                .Property("ShipmentId")
+                .Property("ShipmentId")                
                 .UsePropertyAccessMode (PropertyAccessMode.Field)
                 .HasColumnName("shipment_id")
+                .HasColumnType("uuid")
                 .IsRequired();
 
         }

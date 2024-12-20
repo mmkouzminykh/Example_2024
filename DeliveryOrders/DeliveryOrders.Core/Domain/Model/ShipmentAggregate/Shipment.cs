@@ -10,8 +10,7 @@ using System.Threading.Tasks;
 namespace DeliveryOrders.Core.Domain.Model.ShipmentAggregate
 {
     public class Shipment: Aggregate
-    {
-        private List<Cargo> cargos = new();
+    {       
 
         private Shipment()
         { }
@@ -33,6 +32,8 @@ namespace DeliveryOrders.Core.Domain.Model.ShipmentAggregate
         public Decimal TotalWeight {
             get => cargos.Sum(c => c.Dimensions.Weight); 
         }
+
+        public List<Cargo> cargos { get; private set; } = new();
 
         public Result<Shipment, Error> Create(Guid departurePointId, Guid destinationPointId, DateTime shipmentDate)
         {

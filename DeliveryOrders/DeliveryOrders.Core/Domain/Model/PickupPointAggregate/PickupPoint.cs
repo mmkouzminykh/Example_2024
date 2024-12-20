@@ -23,7 +23,7 @@ namespace DeliveryOrders.Core.Domain.Model.PickupPointAggregate
         public string Name { get; private set; }
         public Address Address { get; private set; }
 
-        public Result<PickupPoint, Error> Create(string name, Address address)
+        public static Result<PickupPoint, Error> Create(string name, Address address)
         {
             if (string.IsNullOrWhiteSpace(name)) return GeneralErrors.ValueIsRequired(nameof(name));
             if (address == null) return GeneralErrors.ValueIsRequired(nameof(address));

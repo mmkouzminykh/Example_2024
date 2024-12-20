@@ -17,7 +17,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<ApplicationDbContext>((_, optionsBuilder) =>
         {
-            optionsBuilder.UseNpgsql(connectionString, sqlOptions => { sqlOptions.MigrationsAssembly("DeliveryApp.Infrastructure"); });
+            optionsBuilder.UseNpgsql(connectionString, sqlOptions => { sqlOptions.MigrationsAssembly("DeliveryOrders.Infrastructure"); });
             optionsBuilder.EnableSensitiveDataLogging();
         });
 
